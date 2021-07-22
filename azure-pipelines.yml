@@ -63,7 +63,7 @@ stages:
 - stage: Deploy
   displayName: Deploy stage
   dependsOn: Build
-  condition: failed()
+  condition: succeeded()
 
   jobs:
   - deployment: Deploy
